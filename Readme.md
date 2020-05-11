@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Владислав Кубрак](https://up.htmlacademy.ru/htmlcss/28/user/1468393).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
