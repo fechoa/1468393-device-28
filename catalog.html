@@ -5,52 +5,73 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
 	<header>
-		<a href="index.html">
-			<img src="img/logo-device.svg" alt="Логотип Device" width="163px" height="35px">
-		</a>
-
-		<form action="">
-			<input placeholder="Поиск по сайту" type="search">
-			<button type="submit">Поиск</button>
-		</form>
-		<div>
-			<a href="">
-				Войти
+			<a href="index.html" aria-label="На главную страницу">
+				<img src="img/logo-device.svg" alt="Логотип компании Device" width="163px" height="35px">
 			</a>
 
-			<a href="">
-				Сравнить
-			</a>
+			<form action="echo.htmlacademy.ru" method="get" aria-label="Поисковая строка">
+					<input type="search" placeholder="Поиск по сайту" aria-label="Поле для поиска">
+					<input type="submit" value="Поиск" aria-label="Поиск">
+			</form>
+			
+			<div>
+				<a href="#" aria-label="Войти в личный кабинет">
+					Войти
+				</a>
+			</div>
 
-			<a href="">
-				Корзина
-			</a>
-		</div>
+			<div>
+				<a href="#" aria-label="Сравнить товары">
+					Сравнить
+				</a>
+			</div>
 
+			<div>
+				<a href="#" aria-label="Корзина">
+					Корзина
+				</a>
+			</div>
 		<nav>
 			<ul>
 				<li>
-					<a href="catalog.html">
-						Каталог товаров
-					</a>					
+					<a href="#" aria-label="Каталог товаров">
+						Каталог товаров	
+					</a>
+
+					<table class="visually-hidden">
+						<tr>
+							<td><a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a></td>
+							<td><a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a></td>
+							<td><a href="#" aria-label="Квадрокоптер">Квадрокоптер</a></td>
+						</tr>
+						<tr>
+							<td><a href="#" aria-label="Моноподы для селфи">Моноподы для селфи</a></td>
+							<td><a href="#" aria-label="Умные часы">Умные часы</a></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><a href="#" aria-label="Экшн камеры">Экшн камеры</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>		
 				</li>
 
 				<li>
-					<a href="delivery.html">
+					<a href="#" aria-label="Доставка">
 						Доставка
 					</a>
 				</li>
 
 				<li>
-					<a href="warranty.html">
+					<a href="#" aria-label="Гарантия">
 						Гарантия
 					</a>
 				</li>
 
 				<li>
-					<a href="contacts.html">
+					<a href="#" aria-label="Контакты">
 						Контакты
 					</a>
 				</li>
@@ -59,7 +80,7 @@
 	</header>
 
 	<main>
-		<h1>
+		<h1 class="visually-hidden">
 			Интернет-магазин Device
 		</h1>
 
@@ -70,19 +91,19 @@
 
 			<ul>
 				<li>
-					<a href="index.html">
+					<a href="index.html" aria-label="На главную страницу">
 						Главная
 					</a>
 				</li>
 
 				<li>
-					<a href="catalog.html">
+					<a href="#" aria-label="Каталог товаров">
 						Каталог товаров
 					</a>
 				</li>
 
 				<li>
-					<a href="monopod.html">
+					<a href="catalog.html" aria-label="Моноподы для селфи">
 						Моноподы для селфи
 					</a>
 				</li>
@@ -90,77 +111,70 @@
 		</section>
 
 		<section>
-			<h4>
-				Фильтр:
-			</h4>
+			<form action="echo.htmlacademy.ru" method="get">
+				<h4>
+					Фильтр:
+				</h4>
 
-			<form>
 				<fieldset>
 					<legend>
 						Стоимость
 					</legend>
 
-					<label>
-						от 0
+					<label for="price-change">
+						0
+					<input type="range" min="1" max="5000" step="1" id="price-change" aria-label="Фильтр цены">
+						5000
 					</label>
-
-					<label>
-						до 5000
-					</label>					
-				</fieldset>	
-			</form>
-
-			<form>
+				</fieldset>
+				
 				<fieldset>
 					<legend>
 						Цвет
 					</legend>
+
 					<ul>
 						<li>
 							<label>
 								Черный
-									<input type="checkbox" name="black" checked="">
+									<input type="checkbox" name="black" aria-label="Черный" checked>
 							</label>
 						</li>
 						<li>
 							<label>
 								Белый
-									<input type="checkbox" name="white">
+									<input type="checkbox" name="white" aria-label="Белый">
 							</label>
 						</li>
 						<li>
 							<label>
 								Синий
-									<input type="checkbox" name="blue" checked="">
+									<input type="checkbox" name="blue" aria-label="Синий" checked>
 							</label>
 						</li>
 						<li>
 							<label>
 								Красный
-									<input type="checkbox" name="red" checked="">
+									<input type="checkbox" name="red" aria-label="Красный" checked>
 							</label>
 						</li>												
 						<li>
 							<label>
 								Розовый
-									<input type="checkbox" name="pink">
+									<input type="checkbox" name="pink" aria-label="Розовый">
 							</label>
 						</li>
 					</ul>
 				</fieldset>
-			</form>
 
-			<form>
 				<fieldset>
 					<legend>Bluetooth</legend>
 					<label>Есть<input type="radio" name="bluetooth" value="yes"></label><br>
 					<label>Нет<input type="radio" name="bluetooth" value="no"></label>
 				</fieldset>
-			</form>
 
-			<button>
-				Показать
-			</button>
+				<button type="submit">Показать</button>
+			</form>
 		</section>
 
 		<section>
@@ -169,9 +183,11 @@
 			</h4>
 
 			<ul>
-				<li><button>По цене</button></li>
-				<li><button>По типу</button></li>
-				<li><button>По популярности</button></li>			
+				<li><a href="#" aria-label="Сортировка по цене">По цене</a></li>
+				<li><a href="#" aria-label="Сортировка по типу товара">По типу</a></li>
+				<li><a href="#" aria-label="Сортировка по популярности">По популярности</a></li>
+				<li><a href="#" aria-label="От меньшего к большему"></a></li>
+				<li><a href="#" aria-label="От большего к меньшему"></a></li>			
 			</ul>
 		</section>
 
@@ -182,6 +198,15 @@
 					Любительская селфи-палка <span>500 руб.</span>
 				</a>
 			</h4>
+
+			<div class="visually-hidden">
+				<button type="submit" aria-label="Добавить товар в корзину">
+					В корзину
+				</button>
+				<button type="submit" aria-label="Добавить товар для сравнения">
+					Добавить к сравнению
+				</button>
+			</div>
 		</div>
 
 		<div>
@@ -191,6 +216,15 @@
 					Профессиональная селфи-палка <span>1500 руб.</span>
 				</a>
 			</h4>
+
+			<div class="visually-hidden">
+				<button type="submit" aria-label="Добавить товар в корзину">
+					В корзину
+				</button>
+				<button type="submit" aria-label="Добавить товар для сравнения">
+					Добавить к сравнению
+				</button>
+			</div>
 		</div>
 
 		<div>
@@ -200,6 +234,15 @@
 					Непотопляемая селфи-палка <span>2500 руб.</span>
 				</a>
 			</h4>
+
+			<div class="visually-hidden">
+				<button type="submit" aria-label="Добавить товар в корзину">
+					В корзину
+				</button>
+				<button type="submit" aria-label="Добавить товар для сравнения">
+					Добавить к сравнению
+				</button>
+			</div>
 		</div>	
 
 		<div>
@@ -209,46 +252,55 @@
 					Селфи-палка "Следуй за мной" <span>4900 руб.</span>
 				</a>
 			</h4>
+
+			<div class="visually-hidden">
+				<button type="submit" aria-label="Добавить товар в корзину">
+					В корзину
+				</button>
+				<button type="submit" aria-label="Добавить товар для сравнения">
+					Добавить к сравнению
+				</button>
+			</div>
 		</div>
 
 		<div>
 			<ul>
 				<li>
-					<a href="#!">
+					<a href="#" aria-label="На предыдущую страницу каталога">
 						 Назад
 					</a>
 				</li>
 
 				<li>
-					<a href="#!">
+					<a href="#" aria-label="На первую страницу каталога">
 						 1
 					</a>
 				</li>
 
 				<li>
-					<a href="#!">
+					<a href="#" aria-label="На вторую страницу каталога">
 						 2
 					</a>
 				</li>
 
 				<li>
-					<a href="#!">
+					<a href="#" aria-label="На третью страницу каталога">
 						 3
 					</a>
 				</li>
 
 				<li>
-					<a href="#!">
+					<a href="#" aria-label="На следующую страницу каталога">
 						 Вперед
 					</a>
 				</li>
 			</ul>
 		</div>
 	</main>
-		<footer>
+	<footer>
 		<div>
-			<a href="index.html">
-				<img src="img/logo-device.svg" alt="Логотип Device" width="163px" height="35px">
+			<a href="index.html" aria-label="На главную страницу">
+				<img src="img/logo-device.svg" alt="Логотип компании Device" width="163px" height="35px">
 			</a>
 
 			<address>
@@ -259,19 +311,19 @@
 		<div>
 			<ul>
 				<li>
-					<a href="delivery.html">
+					<a href="#" aria-label="Доставка">
 						Доставка		
 					</a>
 				</li>
 
 				<li>
-					<a href="warranty.html">
+					<a href="#" aria-label="Гарантия">
 						Гарантия
 					</a>
 				</li>
 
 				<li>
-					<a href="contacts.html">
+					<a href="#" aria-label="Контакты">
 						Контакты
 					</a>
 				</li>
@@ -279,19 +331,19 @@
 
 			<ul>
 				<li>
-					<a href="#!">
+					<a href="#" aria-label="Facebook">
 						Facebook
 					</a>
 				</li>
 
 				<li>
-					<a href="#!">
+					<a href="#" aria-label="Instagram">
 						Instagram
 					</a>
 				</li>
 
 				<li>
-					<a href="#!">
+					<a href="#" aria-label="Twitter">
 						Twitter
 					</a>
 				</li>
@@ -299,24 +351,24 @@
 		</div>
 
 		<div>
-			<a href="">
+			<a href="#" aria-label="Войти в личный кабинет">
 				Войти
 			</a>
 
-			<a href="">
+			<a href="#" aria-label="Сравнить товары">
 				Сравнить
 			</a>	
 
-			<a href="">
+			<a href="#" aria-label="Корзина">
 				Корзина
 			</a>
 
-			<a href="tel:+74954959595">
+			<a href="tel:+74954959595" aria-label="Позвонить нам">
 				+7 (495) 495-95-95
 			</a>
 
-			<a href="https://htmlacademy.ru">
-				<img src="img/logo-html.svg" alt="Перейти на сайт Академии" width="27px" height="34px"
+			<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Курсы от Html Academy">
+				<img src="img/logo-html.svg" alt="Логотип Html Academy" width="27px" height="34px">
 			</a>
 		</div>
 	</footer>
