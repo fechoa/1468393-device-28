@@ -12,26 +12,20 @@
 
 			<form action="echo.htmlacademy.ru" method="get" aria-label="Поисковая строка">
 					<input type="search" placeholder="Поиск по сайту" aria-label="Поле для поиска">
-					<input type="submit" value="Поиск" aria-label="Поиск">
+					<button type="submit" aria-label="Поиск">Поиск</button>
 			</form>
 			
-			<div>
 				<a href="#" aria-label="Войти в личный кабинет">
 					Войти
 				</a>
-			</div>
 
-			<div>
 				<a href="#" aria-label="Сравнить товары">
 					Сравнить
 				</a>
-			</div>
 
-			<div>
 				<a href="#" aria-label="Корзина">
 					Корзина
 				</a>
-			</div>
 		<nav>
 			<ul>
 				<li>
@@ -39,23 +33,15 @@
 						Каталог товаров	
 					</a>
 
-					<table class="visually-hidden">
-						<tr>
-							<td><a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a></td>
-							<td><a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a></td>
-							<td><a href="#" aria-label="Квадрокоптер">Квадрокоптер</a></td>
-						</tr>
-						<tr>
-							<td><a href="#" aria-label="Моноподы для селфи">Моноподы для селфи</a></td>
-							<td><a href="#" aria-label="Умные часы">Умные часы</a></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td><a href="#" aria-label="Экшн камеры">Экшн камеры</a></td>
-							<td></td>
-							<td></td>
-						</tr>
-					</table>		
+					<ul class="visually-hidden">
+						
+						<li><a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a></li>
+						<li><a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a></li>
+						<li><a href="#" aria-label="Квадрокоптер">Квадрокоптер</a></li>
+						<li><a href="#" aria-label="Моноподы для селфи">Моноподы для селфи</a></li>
+						<li><a href="#" aria-label="Умные часы">Умные часы</a></li>
+						<li><a href="#" aria-label="Экшн камеры">Экшн камеры</a></li>
+				</ul>		
 				</li>
 
 				<li>
@@ -296,7 +282,7 @@
 					</label>
 					<textarea name="comment-in-form" id="comment-in-form" cols="30" rows="5" placeholder="В свободной форме" required></textarea>
 
-					<input type="submit" name="send-form" value="Отправить" aria-label="Отправить">
+					<button type="submit" name="send-form" aria-label="Отправить">Отправить</button>
 
 					<button name="close-form" value="close-form" aria-label="Закрыть">Закрыть</button>
 				</form>
