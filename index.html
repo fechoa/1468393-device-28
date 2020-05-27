@@ -1,62 +1,96 @@
 <!DOCTYPE html>
 <html lang="ru"> 
   <head>
+  	<link rel="stylesheet" href="css/fonts.css">
+  	<link rel="stylesheet" href="css/normalize.css">
+  	<link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
   </head>
+
   <body>
-	<header>
-			<a href="index.html" aria-label="На главную страницу">
-				<img src="img/logo-device.svg" alt="Логотип компании Device" width="163px" height="35px">
-			</a>
+	<header class="header">
+		<a class="logo" href="index.html" aria-label="На главную страницу">
+			<img src="img/logo-device.svg" alt="Логотип компании Device" width="163px" height="35px">
+		</a>
 
-			<form action="echo.htmlacademy.ru" method="get" aria-label="Поисковая строка">
-					<input type="search" placeholder="Поиск по сайту" aria-label="Поле для поиска">
-					<button type="submit" aria-label="Поиск">Поиск</button>
-			</form>
+		<form action="echo.htmlacademy.ru" method="get" aria-label="Поисковая строка">
+			<input  type="search" placeholder="Поиск по сайту" aria-label="Поле для поиска">
+
+			<button class="send-search" type="submit" aria-label="Поиск">
+				<span class="description-send-search">
+					Найти
+				</span>
+			</button>
+		</form>
 			
-				<a href="#" aria-label="Войти в личный кабинет">
-					Войти
-				</a>
+		<a class="a-link-hover a-link-focus a-link-active" href="#" aria-label="Войти в личный кабинет">
+			Войти
+		</a>
 
-				<a href="#" aria-label="Сравнить товары">
-					Сравнить
-				</a>
+		<a class="a-link-hover a-link-focus a-link-active"  href="#" aria-label="Сравнить товары">
+			Сравнить
+		</a>
 
-				<a href="#" aria-label="Корзина">
-					Корзина
-				</a>
-		<nav>
+		<a class="a-link-hover a-link-focus a-link-active" href="#" aria-label="Корзина">
+			Корзина
+		</a>
+
+		<nav class="nav-main">
 			<ul>
 				<li>
-					<a href="#" aria-label="Каталог товаров">
+					<a class="a-link-hover a-link-focus a-link-active" href="#" aria-label="Каталог товаров">
 						Каталог товаров	
 					</a>
 
-					<ul class="visually-hidden">						
-						<li><a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a></li>
-						<li><a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a></li>
-						<li><a href="#" aria-label="Квадрокоптер">Квадрокоптер</a></li>
-						<li><a href="#" aria-label="Моноподы для селфи">Моноподы для селфи</a></li>
-						<li><a href="#" aria-label="Умные часы">Умные часы</a></li>
-						<li><a href="#" aria-label="Экшн камеры">Экшн камеры</a></li>
+					<ul class="visually-hidden categories-menu">						
+						<li>
+							<a class="a-link-hover a-link-focus a-link-active" href="#" aria-label="Виртуальная реальность">
+								Виртуальная реальность
+							</a>
+						</li>
+						<li>
+							<a class="a-link-hover a-link-focus a-link-active" href="#" aria-label="Фитнес-браслеты">
+								Фитнес-браслеты
+							</a>
+						</li>
+						<li>
+							<a class="a-link-hover a-link-focus a-link-active" href="#" aria-label="Квадрокоптер">
+								Квадрокоптер
+							</a>
+						</li>
+						<li>
+							<a class="a-link-hover a-link-focus a-link-active" href="#" aria-label="Моноподы для селфи">
+								Моноподы для селфи
+							</a>
+						</li>
+						<li>
+							<a class="a-link-hover a-link-focus a-link-active" href="#" aria-label="Умные часы">
+								Умные часы
+							</a>
+						</li>
+						<li>
+							<a class="a-link-hover a-link-focus a-link-active" href="#" aria-label="Экшн камеры">
+								Экшн камеры
+							</a>
+						</li>
 					</ul>		
 				</li>
 
 				<li>
-					<a href="#" aria-label="Доставка">
+					<a class="a-link-hover a-link-focus a-link-active" href="#" aria-label="Доставка">
 						Доставка
 					</a>
 				</li>
 
 				<li>
-					<a href="#" aria-label="Гарантия">
+					<a class="a-link-hover a-link-focus a-link-active" href="#" aria-label="Гарантия">
 						Гарантия
 					</a>
 				</li>
 
 				<li>
-					<a href="#" aria-label="Контакты">
+					<a class="a-link-hover a-link-focus a-link-active" href="#" aria-label="Контакты">
 						Контакты
 					</a>
 				</li>
@@ -77,33 +111,40 @@
 				как Бен Стиллер
 			</h2>
 
-			<p>
+			<p class="description-banner">
 				Самая длинная палка для селфи доступна в нашем магазине.<br>
 				Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 			</p>
-
-			<a href="#" aria-label="Подробнее">
-				Подробнее
-			</a>
-
+			
+			<div>
+				<a class="a-link-second a-link-second-hover a-link-second-active a-link-second-focus" href="#" aria-label="Подробнее">
+					Подробнее
+				</a>
+			</div>
 
 			<table>
-				<tr>
+				<tr class="title-attr-banner">
 					<td>8,5 м</td>
 					<td>5 кг</td>
 					<td>Карбон</td>
 				</tr>
 
-				<tr>
+				<tr class="description-attr-banner">
 					<td>Длина палки</td>
 					<td>Вес палки</td>
 					<td>Материал</td>
 				</tr>
 			</table>
+			
+			<div>
+				<input type="radio" value="1" name="slider">
+				<input type="radio" value="2" name="slider">
+				<input type="radio" value="3" name="slider">
+			</div>
 		</div>
 
 		<div>
-			<ul>
+			<ul class="categories">
 				<li>
 					<a href="#" aria-label="Виртуальная реальность">
 						Виртуальная реальность
@@ -144,41 +185,41 @@
 
 		<section>
 			<ul>
-				<li><button class="delivery" aria-label="Доставка">Доставка</button></li>
-				<li><button class="warranty" aria-label="Гарантия">Гарантия</button></li>
-				<li><button class="credit" aria-label="Кредит">Кредит</button></li>
+				<li><button class="button-type-slider" aria-label="Доставка">Доставка</button></li>
+				<li><button class="button-type-slider" aria-label="Гарантия">Гарантия</button></li>
+				<li><button class="button-type-slider" aria-label="Кредит">Кредит</button></li>
 			</ul>
 
 			<ul>
-				<li for="delivery">
+				<li>
 					<h2>
 						Доставка
 					</h2>
 
-					<p>
+					<p class="description-slider">
 						Мы с удовольствием доставим ваш товар прямо к вашему<br>
 						подъезду совершенно бесплатно! Ведь мы неплохо<br>
 						заработаем, поднимая его на ваш этаж.							
 					</p>
 				</li>
-				<li for="warranty">
+				<li class="visually-hidden">
 					<h2>
 						Гарантия
 					</h2>
 
-					<p>
+					<p class="description-slider">
 						Мы с удовольствием гарантируем ваш товар для вас<br>
 						совершенно бесплатно! Ведь мы неплохо<br>
 						заработаем на вас.							
 					</p>					
 				</li>
 
-				<li for="credit">
+				<li class="visually-hidden">
 					<h2>
 						Кредит
 					</h2>
 
-					<p>
+					<p class="description-slider">
 						Мы с удовольствием прокредитуем ваш товар для вас<br>
 						совершенно бесплатно! Ведь мы неплохо<br>
 						заработаем на вас.							
@@ -220,23 +261,23 @@
 				О нас
 			</h2>
 
-			<p>
+			<p class="description-about-us">
 				Огромный выбор гаджетов не оставит равнодушным гика,<br>
 				который есть в каждом из нас.
 			</p>
 
-			<p>
+			<p class="description-about-us">
 				Мы можем доставить ваш товар в самые отдаленные точки<br>
 				России! DEVICE работает со многими транспортными компаниями:
 			</p>
 
-			<ul>
+			<ul class="delivery-companies">
 				<li>Деловые линии</li>
 				<li>Автотрейдинг</li>
 				<li>ЖелДорЭкспедиция</li>
 			</ul>
 
-			<a href="#" aria-label="Подробнее о нас">
+			<a class="a-link-second" href="#" aria-label="Подробнее о нас">
 				Подробнее о нас
 			</a>
 		</section>
@@ -246,12 +287,12 @@
 				Контакты
 			</h2>
 
-			<p>
+			<p class="description-contacts">
 				Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br> 
 				проверить работоспособность покупки. Всякое бывает.
 			</p>
 
-			<a href="#" aria-label="Посмотреть большую карту">
+			<a class="a-link-second" href="#" aria-label="Посмотреть большую карту">
 				<img src="img/map.png" alt="Карта офиса ул. Строителей 15" width="560px" height="222px">
 			</a>
 
@@ -260,42 +301,42 @@
 				<button aria-label="Закрыть">Закрыть</button>	
 			</div>
 
-			<a href="#" aria-label="Напишите нам">
+			<a class="a-link-second" href="#" aria-label="Напишите нам">
 				Напишите нам
 			</a>
 			
 			<div class="visually-hidden">
 				<form action="echo.htmlacademy.ru" method="post">
-					<label>
+					<label class="label-modal-form">
 						Ваше имя:
-						<input type="text" name="username" placeholder="Имя Фамилия" autofocus required>
+						<input class="input-style-form" type="text" name="username" placeholder="Имя Фамилия" required>
 					</label>
 
-					<label>
+					<label class="label-modal-form">
 						Ваш e-mail:
-						<input type="e-mail" name="email" placeholder="email@example.com" required>
+						<input class="input-style-form"t type="e-mail" name="email" placeholder="email@example.com" required>
 					</label>
 
-					<label for="comment-in-form">
+					<label class="label-modal-form" for="comment-in-form">
 						Текст письма
 					</label>
-					<textarea name="comment-in-form" id="comment-in-form" cols="30" rows="5" placeholder="В свободной форме" required></textarea>
+					<textarea class="input-style-form" name="comment-in-form" id="comment-in-form" cols="30" rows="5" placeholder="В свободной форме" required></textarea>
 
 					<button type="submit" name="send-form" aria-label="Отправить">Отправить</button>
 
-					<button name="close-form" value="close-form" aria-label="Закрыть">Закрыть</button>
+					<button class="button-type-slider" name="close-form" value="close-form" aria-label="Закрыть">Закрыть</button>
 				</form>
 			</div>
 		</section>
 	</main>
 
-	<footer>
+	<footer class="footer">
 		<div>
-			<a href="index.html" aria-label="На главную страницу">
-				<img src="img/logo-device.svg" alt="Логотип компании Device" width="163px" height="35px">
+			<a class="logo" href="index.html" aria-label="На главную страницу">
+				<img src="img/logo-footer-yellow.svg" alt="Логотип компании Device" width="163px" height="35px">
 			</a>
 
-			<address>
+			<address class="address">
 				г. Москва, ул. Строителей, 15
 			</address>
 		</div>
@@ -303,20 +344,20 @@
 		<div>
 			<ul>
 				<li>
-					<a href="#" aria-label="Доставка">
-						Доставка		
+					<a class="a-link-hover a-link-active a-link-focus" href="#" aria-label="Доставка">
+						<span class="nav-list-footer">Доставка</span>	
 					</a>
 				</li>
 
 				<li>
-					<a href="#" aria-label="Гарантия">
-						Гарантия
+					<a class="a-link-hover a-link-active a-link-focus" href="#" aria-label="Гарантия">
+						<span class="nav-list-footer">Гарантия</span>
 					</a>
 				</li>
 
 				<li>
-					<a href="#" aria-label="Контакты">
-						Контакты
+					<a class="a-link-hover a-link-active a-link-focus" href="#" aria-label="Контакты">
+						<span class="nav-list-footer">Контакты</span>
 					</a>
 				</li>
 			</ul>
@@ -329,7 +370,7 @@
 				</li>
 
 				<li>
-					<a href="#" aria-label="Instagram">
+					<a class="nav-footer" href="#" aria-label="Instagram">
 						Instagram
 					</a>
 				</li>
@@ -343,23 +384,23 @@
 		</div>
 
 		<div>
-			<a href="#" aria-label="Войти в личный кабинет">
-				Войти
+			<a class="a-link-hover a-link-active a-link-focus" href="#" aria-label="Войти в личный кабинет">
+				<span class="footer-text-nav">Войти</span>
 			</a>
 
-			<a href="#" aria-label="Сравнить товары">
-				Сравнить
+			<a class="a-link-hover a-link-active a-link-focus" href="#" aria-label="Сравнить товары">
+				<span class="footer-text-nav">Сравнить</span>
 			</a>	
 
-			<a href="#" aria-label="Корзина">
-				Корзина
+			<a class="a-link-hover a-link-active a-link-focus" href="#" aria-label="Корзина">
+				<span class="footer-text-nav">Корзина</span>
 			</a>
 
-			<a href="tel:+74954959595" aria-label="Позвонить нам">
+			<a class="a-phone a-link-hover a-link-active a-link-focus" href="tel:+74954959595" aria-label="Позвонить нам">
 				+7 (495) 495-95-95
 			</a>
 
-			<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Курсы от Html Academy">
+			<a class="a-link-hover a-link-active a-link-focus" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Курсы от Html Academy">
 				<img src="img/logo-html.svg" alt="Логотип Html Academy" width="27px" height="34px">
 			</a>
 		</div>

@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/open-sans-v17-latin_cyrillic-300.eot'); 
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+       url('../fonts/open-sans-v17-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/open-sans-v17-latin_cyrillic-300.woff2') format('woff2'), 
+       url('../fonts/open-sans-v17-latin_cyrillic-300.woff') format('woff'),
+       url('../fonts/open-sans-v17-latin_cyrillic-300.ttf') format('truetype'), 
+       url('../fonts/open-sans-v17-latin_cyrillic-300.svg#OpenSans') format('svg'); 
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v17-latin_cyrillic-regular.eot'); 
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../fonts/open-sans-v17-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/open-sans-v17-latin_cyrillic-regular.woff2') format('woff2'), 
+       url('../fonts/open-sans-v17-latin_cyrillic-regular.woff') format('woff'), 
+       url('../fonts/open-sans-v17-latin_cyrillic-regular.ttf') format('truetype'),
+       url('../fonts/open-sans-v17-latin_cyrillic-regular.svg#OpenSans') format('svg');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;    
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+          url('../fonts/Gilroylight.woff2') format('woff2'), 
+          url('../fonts/Gilroylight.woff') format('woff'), 
+          url('../fonts/Gilroylight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), 
+          url('../fonts/Gilroyextrabold.woff2') format('woff2'), 
+          url('../fonts/Gilroyextrabold.woff') format('woff'), 
+          url('../fonts/Gilroyextrabold.ttf') format('truetype');   
+}
