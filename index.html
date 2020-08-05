@@ -28,64 +28,34 @@
 					</button>
 				</form>
 				
-				<div class="link-style link-enter">
-					<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Войти в личный кабинет">
+				<div class="box-link link-style link-enter">
+					<a class="enter link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Войти в личный кабинет">
 						Войти
 					</a>
 				</div>
 
-				<div class="link-compare">
-					<a class="link-style a-link-hover a-link-focus a-link-active"  href="#" aria-label="Сравнить товары">
+				<div class="box-link link-compare">
+					<a class="change link-style a-link-hover a-link-focus a-link-active"  href="#" aria-label="Сравнить товары">
 						Сравнить
 					</a>
 				</div>
 
-				<div class="link-basket">
-					<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Корзина">
+				<div class="box-link link-basket">
+					<a class="cart link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Корзина">
 						Корзина
 					</a>
 				</div>
 			</div>
 			<nav class="nav-main">
 				<ul class="list-nav-main">
-					<li class="nav-li">
-						<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Каталог товаров">
+					<li class="nav-li nav-li-box">
+						<a class="catalog link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Каталог товаров">
 							Каталог товаров	
-						</a>
-
-						<ul class="visually-hidden categories-menu">						
-							<li>
-								<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Виртуальная реальность">
-									Виртуальная реальность
-								</a>
-							</li>
-							<li>
-								<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Фитнес-браслеты">
-									Фитнес-браслеты
-								</a>
-							</li>
-							<li>
-								<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Квадрокоптер">
-									Квадрокоптер
-								</a>
-							</li>
-							<li>
-								<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Моноподы для селфи">
-									Моноподы для селфи
-								</a>
-							</li>
-							<li>
-								<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Умные часы">
-									Умные часы
-								</a>
-							</li>
-							<li>
-								<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Экшн камеры">
-									Экшн камеры
-								</a>
-							</li>
-						</ul>		
+						</a>	
 					</li>
+
+					
+
 
 					<li class="nav-li">
 						<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Доставка">
@@ -105,6 +75,42 @@
 						</a>
 					</li>
 				</ul>
+
+				<div class="categories-menu visually-hidden">
+					<ul class="hover-menu">	
+						<li>
+							<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Виртуальная реальность">
+								Виртуальная реальность
+							</a>
+						</li>
+						<li>
+							<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Фитнес-браслеты">
+								Фитнес-браслеты
+							</a>
+						</li>
+						<li>
+							<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Квадрокоптер">
+								Квадрокоптер
+							</a>
+						</li>
+						<li>
+							<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Моноподы для селфи">
+								Моноподы для селфи
+							</a>
+						</li>
+						<li>
+							<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Умные часы">
+								Умные часы
+							</a>
+						</li>
+
+						<li>
+							<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Экшн камеры">
+								Экшн камеры
+							</a>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -138,9 +144,12 @@
 						</div>
 
 						<div class="range-box">
-							<input class="input-slider" type="radio" value="1" name="slider" checked="">
-							<input class="input-slider" type="radio" value="2" name="slider">
-							<input class="input-slider" type="radio" value="3" name="slider">
+							<input class="input-slider" id="one" type="radio" value="1" name="slider" checked="">
+							<label for="one"></label>
+							<input class="input-slider" id="two" type="radio" value="2" name="slider">
+							<label for="two"></label>
+							<input class="input-slider" id="three" type="radio" value="3" name="slider">
+							<label for="three"></label>
 						</div>
 					</div>
 
@@ -443,10 +452,50 @@
 				</a>
 				
 				<div class="bg-button-second">
-					<a class="link-style a-link-second a-link-map" href="#" aria-label="Напишите нам">
+					<a class="link-write link-style a-link-second a-link-map" href="#" aria-label="Напишите нам">
 						Напишите нам
 					</a>
 				</div>
+
+				<div class="form-back visually-hidden">
+					<form class="form-back-box" action="echo.htmlacademy.ru" method="post">
+						<div class="item-form1">
+							<label class="label-modal-form">
+								Ваше имя:
+							</label>
+							<input class="input-style-form" type="text" name="username" placeholder="Имя Фамилия" required>
+						</div>
+
+						<div class="item-form2">
+							<label class="label-modal-form">
+								Ваш e-mail:
+							</label>
+							<input class="input-style-form"t type="e-mail" name="email" placeholder="email@example.com" required>
+						</div>
+						
+
+						<div class="item-form3">
+							<label class="label-modal-form" for="comment-in-form">
+								Текст письма
+							</label>
+							<textarea class="input-style-form-area" name="comment-in-form" id="comment-in-form" placeholder="В свободной форме" required></textarea>
+						</div>
+
+						<button class="button-type-slider button-form" type="submit" name="send-form" aria-label="Отправить">Отправить</button>	
+					</form>
+
+					<button class="button-close" name="close-form" value="close-form" aria-label="Закрыть">
+						<div class="close-icon"></div>
+					</button>
+				</div>
+
+				<div class="map-box visually-hidden">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade5034afb335b2450b5319cebe04b44d62430244f9918dec94f8b76294b41c03&amp;source=constructor" width="994" height="593" frameborder="0"></iframe>
+
+					<button class="button-close2" name="close-form" value="close-form" aria-label="Закрыть">
+						<div class="close-icon"></div>
+					</button>	
+				</div>		
 			</section>
 		</div>
 	</main>
@@ -510,19 +559,19 @@
 			<div class="third-column-footer">
 				<div class="footer-menu-box">
 					<div class="footer-item1">
-						<a class="link-style a-link-hover a-link-active a-link-focus" href="#" aria-label="Войти в личный кабинет">
+						<a class="enter-y link-style a-link-hover a-link-active a-link-focus" href="#" aria-label="Войти в личный кабинет">
 							<span class="footer-text-nav">Войти</span>
 						</a>
 					</div>
 
 					<div class="footer-item2">
-						<a class="link-style a-link-hover a-link-active a-link-focus" href="#" aria-label="Сравнить товары">
+						<a class="change-y link-style a-link-hover a-link-active a-link-focus" href="#" aria-label="Сравнить товары">
 							<span class="footer-text-nav">Сравнить</span>
 						</a>	
 					</div>
 
 					<div class="footer-item3">
-						<a class="link-style a-link-hover a-link-active a-link-focus" href="#" aria-label="Корзина">
+						<a class="cart-y link-style a-link-hover a-link-active a-link-focus" href="#" aria-label="Корзина">
 							<span class="footer-text-nav">Корзина</span>
 						</a>
 					</div>
@@ -538,32 +587,6 @@
 			</div>
 		</div>
 	</footer>				
-	<div class="visually-hidden">
-		<form action="echo.htmlacademy.ru" method="post">
-			<label class="label-modal-form">
-				Ваше имя:
-				<input class="input-style-form" type="text" name="username" placeholder="Имя Фамилия" required>
-			</label>
-
-			<label class="label-modal-form">
-				Ваш e-mail:
-				<input class="input-style-form"t type="e-mail" name="email" placeholder="email@example.com" required>
-			</label>
-
-			<label class="label-modal-form" for="comment-in-form">
-				Текст письма
-			</label>
-			<textarea class="input-style-form" name="comment-in-form" id="comment-in-form" cols="30" rows="5" placeholder="В свободной форме" required></textarea>
-
-			<button type="submit" name="send-form" aria-label="Отправить">Отправить</button>
-
-			<button class="button-type-slider" name="close-form" value="close-form" aria-label="Закрыть">Закрыть</button>
-		</form>
-
-		<div class="visually-hidden">
-			<img src="img/map-big.jpg" alt="Большая карта">
-			<button aria-label="Закрыть">Закрыть</button>	
-		</div>
-	</div>
+	<script src="js/script.js"></script>
   </body>
 </html>

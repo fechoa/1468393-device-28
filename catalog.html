@@ -28,64 +28,34 @@
 					</button>
 				</form>
 				
-				<div class="link-style link-enter">
-					<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Войти в личный кабинет">
+				<div class="box-link link-style link-enter">
+					<a class="enter link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Войти в личный кабинет">
 						Войти
 					</a>
 				</div>
 
-				<div class="link-compare">
-					<a class="link-style a-link-hover a-link-focus a-link-active"  href="#" aria-label="Сравнить товары">
+				<div class="box-link link-compare">
+					<a class="change link-style a-link-hover a-link-focus a-link-active"  href="#" aria-label="Сравнить товары">
 						Сравнить
 					</a>
 				</div>
 
-				<div class="link-basket">
-					<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Корзина">
+				<div class="box-link link-basket">
+					<a class="cart link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Корзина">
 						Корзина
 					</a>
 				</div>
 			</div>
 			<nav class="nav-main">
 				<ul class="list-nav-main">
-					<li class="nav-li">
-						<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Каталог товаров">
+					<li class="nav-li nav-li-box">
+						<a class="catalog link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Каталог товаров">
 							Каталог товаров	
-						</a>
-
-						<ul class="visually-hidden categories-menu">						
-							<li>
-								<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Виртуальная реальность">
-									Виртуальная реальность
-								</a>
-							</li>
-							<li>
-								<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Фитнес-браслеты">
-									Фитнес-браслеты
-								</a>
-							</li>
-							<li>
-								<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Квадрокоптер">
-									Квадрокоптер
-								</a>
-							</li>
-							<li>
-								<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Моноподы для селфи">
-									Моноподы для селфи
-								</a>
-							</li>
-							<li>
-								<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Умные часы">
-									Умные часы
-								</a>
-							</li>
-							<li>
-								<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Экшн камеры">
-									Экшн камеры
-								</a>
-							</li>
-						</ul>		
+						</a>	
 					</li>
+
+					
+
 
 					<li class="nav-li">
 						<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Доставка">
@@ -105,6 +75,42 @@
 						</a>
 					</li>
 				</ul>
+
+				<div class="categories-menu visually-hidden">
+					<ul class="hover-menu">	
+						<li>
+							<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Виртуальная реальность">
+								Виртуальная реальность
+							</a>
+						</li>
+						<li>
+							<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Фитнес-браслеты">
+								Фитнес-браслеты
+							</a>
+						</li>
+						<li>
+							<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Квадрокоптер">
+								Квадрокоптер
+							</a>
+						</li>
+						<li>
+							<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Моноподы для селфи">
+								Моноподы для селфи
+							</a>
+						</li>
+						<li>
+							<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Умные часы">
+								Умные часы
+							</a>
+						</li>
+
+						<li>
+							<a class="link-style a-link-hover a-link-focus a-link-active" href="#" aria-label="Экшн камеры">
+								Экшн камеры
+							</a>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -160,7 +166,19 @@
 								<legend class="filter-title filter-legend1">
 									Стоимость
 								</legend>
-								<img class="range-img" width="200" height="44" src="img/range-img.png" alt="">
+								
+								<div class="range-bar">
+									<div class="range-bar-box">
+										<div class="bar-box">
+											<div class="bar-progress"></div>
+										</div>
+									</div>
+
+									<div class="range-inputs">
+										<input type="text" class="number" value="от 0">
+										<input type="text" class="number" value="до 5000">
+									</div>
+								</div>
 							</fieldset>
 							
 							<div class="line-form line-form2"></div>
@@ -209,8 +227,8 @@
 							<fieldset class="fieldset-form">
 								<legend class="filter-title filter-legend3">Bluetooth</legend>
 								<ul class="radio-list">
-								<li class="list-filter-radio"><input type="radio" name="bluetooth" value="yes"><label>Есть</label></li>
-								<li class="list-filter-radio"><input type="radio" name="bluetooth" value="no"><label>Нет</label></li>
+								<li class="list-filter-radio"><input type="radio" name="bluetooth" value="yes" id="yes"><label for="yes">Есть</label></li>
+								<li class="list-filter-radio"><input type="radio" name="bluetooth" value="no" id="no"><label for="no">Нет</label></li>
 								</ul>
 							</fieldset>
 
@@ -230,8 +248,8 @@
 						<li class="sort-list1"><a class="list-sorting-link" href="#" aria-label="Сортировка по цене">По цене</a></li>
 						<li class="sort-list2"><a class="list-sorting-link" href="#" aria-label="Сортировка по типу товара">По типу</a></li>
 						<li class="sort-list3"><a class="list-sorting-link" href="#" aria-label="Сортировка по популярности">По популярности</a></li>
-						<li class="sort-list4"><a class="list-sorting-link" href="#" aria-label="От меньшего к большему"></a></li>
-						<li class="sort-list5"><a class="list-sorting-link" href="#" aria-label="От большего к меньшему"></a></li>			
+						<li class="sort-list4"><a class="list-arrow" href="#" aria-label="От меньшего к большему"></a></li>
+						<li class="sort-list5"><a class="list-arrow2" href="#" aria-label="От большего к меньшему"></a></li>			
 					</ul>
 				</section>
 				
@@ -383,7 +401,7 @@
 		</div>
 	</main>
 
-		<footer class="footer">
+<footer class="footer">
 		<div class="footer-box">
 			<div class="first-column-footer">
 				<a class="logo-footer" href="index.html" aria-label="На главную страницу">
@@ -442,19 +460,19 @@
 			<div class="third-column-footer">
 				<div class="footer-menu-box">
 					<div class="footer-item1">
-						<a class="link-style a-link-hover a-link-active a-link-focus" href="#" aria-label="Войти в личный кабинет">
+						<a class="enter-y link-style a-link-hover a-link-active a-link-focus" href="#" aria-label="Войти в личный кабинет">
 							<span class="footer-text-nav">Войти</span>
 						</a>
 					</div>
 
 					<div class="footer-item2">
-						<a class="link-style a-link-hover a-link-active a-link-focus" href="#" aria-label="Сравнить товары">
+						<a class="change-y link-style a-link-hover a-link-active a-link-focus" href="#" aria-label="Сравнить товары">
 							<span class="footer-text-nav">Сравнить</span>
 						</a>	
 					</div>
 
 					<div class="footer-item3">
-						<a class="link-style a-link-hover a-link-active a-link-focus" href="#" aria-label="Корзина">
+						<a class="cart-y link-style a-link-hover a-link-active a-link-focus" href="#" aria-label="Корзина">
 							<span class="footer-text-nav">Корзина</span>
 						</a>
 					</div>
@@ -469,7 +487,8 @@
 				</a>
 			</div>
 		</div>
-	</footer>	
+	</footer>				
+	<script src="js/script.js"></script>
   </body>
 </html>
 
